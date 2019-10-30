@@ -6,6 +6,7 @@
 #import "UIColor+OWS.h"
 #import "UIFont+OWS.h"
 #import "UIView+OWS.h"
+#import "UIColor+Packmam.h"
 #import <SignalMessaging/SignalMessaging-Swift.h>
 
 NSString *NSStringForScreenLockUIState(ScreenLockUIState value)
@@ -37,7 +38,8 @@ NSString *NSStringForScreenLockUIState(ScreenLockUIState value)
 {
     [super loadView];
 
-    self.view.backgroundColor = UIColor.ows_materialBlueColor;
+    self.view.backgroundColor = UIColor.packmam_Gray;
+
 
     UIView *edgesView = [UIView containerView];
     [self.view addSubview:edgesView];
@@ -51,11 +53,10 @@ NSString *NSStringForScreenLockUIState(ScreenLockUIState value)
     [edgesView addSubview:imageView];
     [imageView autoHCenterInSuperview];
 
-    const CGSize screenSize = UIScreen.mainScreen.bounds.size;
-    const CGFloat shortScreenDimension = MIN(screenSize.width, screenSize.height);
-    const CGFloat imageSize = (CGFloat)round(shortScreenDimension / 3.f);
-    [imageView autoSetDimension:ALDimensionWidth toSize:imageSize];
-    [imageView autoSetDimension:ALDimensionHeight toSize:imageSize];
+    [imageView autoPinToAspectRatio:1274.0/862.0];
+    [imageView autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self.view withMultiplier:2.0/3.0];
+
+
 
     const CGFloat kButtonHeight = 40.f;
     OWSFlatButton *button =

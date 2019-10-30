@@ -7,7 +7,7 @@
 #import "ContactsViewHelper.h"
 #import "NewGroupViewController.h"
 #import "OWSTableViewController.h"
-#import "Signal-Swift.h"
+#import "Packmam-Swift.h"
 #import "SignalApp.h"
 #import "UIColor+OWS.h"
 #import "UIView+OWS.h"

@@ -3,7 +3,7 @@
 //
 
 #import "AboutTableViewController.h"
-#import "Signal-Swift.h"
+#import "Packmam-Swift.h"
 #import "UIView+OWS.h"
 #import <SignalMessaging/Environment.h>
 #import <SignalMessaging/OWSPreferences.h>

@@ -8,7 +8,7 @@
 #import "OWSMessageHeaderView.h"
 #import "OWSMessageStickerView.h"
 #import "OWSMessageViewOnceView.h"
-#import "Signal-Swift.h"
+#import "Packmam-Swift.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

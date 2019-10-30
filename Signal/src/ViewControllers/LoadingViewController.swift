@@ -19,14 +19,15 @@ public class LoadingViewController: UIViewController {
 
     override public func loadView() {
         self.view = UIView()
-        view.backgroundColor = UIColor.ows_materialBlue
+        view.backgroundColor = UIColor.packmam_Gray
 
         self.logoView = UIImageView(image: #imageLiteral(resourceName: "logoSignal"))
         view.addSubview(logoView)
 
         logoView.autoCenterInSuperview()
-        logoView.autoPinToSquareAspectRatio()
-        logoView.autoMatch(.width, to: .width, of: view, withMultiplier: 1/3)
+        logoView.autoPin(toAspectRatio: 1274.0/862.0)
+        logoView.autoMatch(.width, to: .width, of: view, withMultiplier: 2/3)
+
 
         self.topLabel = buildLabel()
         topLabel.alpha = 0

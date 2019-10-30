@@ -7,7 +7,7 @@
 #import "DateUtil.h"
 #import "OWSMessageBubbleView.h"
 #import "OWSQuotedReplyModel.h"
-#import "Signal-Swift.h"
+#import "Packmam-Swift.h"
 #import <SignalCoreKit/NSDate+OWS.h>
 #import <SignalMessaging/OWSContactsManager.h>
 #import <SignalMessaging/OWSUnreadIndicator.h>
